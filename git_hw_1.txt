@@ -1,6 +1,10 @@
 JSON
- 4. Создать внешний репозиторий c названием JSON. - на github.com "create a new repository", add discription "First part of GIT_HW_1" and enter "Create repository"
- 5. Клонировать репозиторий JSON на локальный компьютер. Enter "code", copy URL > git clone https://github.com/RacooPrArt/JSON.git
+ 4. Создать внешний репозиторий c названием JSON. - 
+на github.com "create a new repository", add repository name "JSON" and discription "First part of GIT_HW_1" and enter "Create repository"
+
+ 5. Клонировать репозиторий JSON на локальный компьютер. 
+Enter "code", copy URL > git clone https://github.com/RacooPrArt/JSON.git
+
  6. Внутри локального JSON создать файл “new.json”. touch new.json
  7. Добавить файл под гит. - git add .
  8. Закоммитить файл. - git commit . -m "add first file"
@@ -85,41 +89,175 @@ git pull
 
 XML
  21. Создать внешний репозиторий c названием XML.
+на github.com click "create a new repository", add repository name "XML" and discription "second part ofGIT_HW_1" and enter "create repository
+
  22. Клонировать репозиторий XML на локальный компьютер.
+enter "code", copy URL in http > git clone https://github.com/RacooPrArt/XML.git
+
  23. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+
  24. Добавить файл под гит.
+git add .
+
  25. Закоммитить файл.
+git commit - m "add a new.xml"
+
  26. Отправить файл на внешний GitHub репозиторий.
+git push
+
  27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml
+i
+<aboutMyself>
+        <name>Artem</name>
+        <lastname>Pryadnev</lastname>
+        <age>27</age>
+        <petsNumber>0</petsNumber>
+        <salaryExpectations>80000RUB</salaryExpectations>
+        <city>Moscow</city>
+</aboutMyself>
+enter "esc"
+:wq
+
  28. Отправить изменения на внешний репозиторий.
+git commit -am "update new.xml"
+git push
+
  29. Создать файл preferences.xml
+touch preferences.xml
+
  30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+i
+<My_Preferences>
+        <Film>La-La-Land</Film>
+        <Series>Big Bang Theory</Series>
+        <food>meat</food>
+        <season>summer</season>
+        <desired_Country>Czech</desired_Country>
+</My_Preferences>
+enter "esc"
+:wq
+
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch skills.xml
+vim skills.xml
+i
+<course_skills>
+        <linux_tool>Gitbash</linux_tool>
+        <Version_control_tool>GitHub</Version_control_tool>
+        <task_tracking_system>jira</task_tracking_system>
+</course_skills>
+enter "esc"
+:wq
+
  32. Сделать коммит в одну строку.
+git add . ; git commit - am "commit both xml files
+"
  33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
  34. На веб интерфейсе создать файл bug_report.xml.
+click "add file" > "create file"
+
  35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+click green "commit changes"
+
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+click "pencil"
+<bug_report>
+  <title>error 404 when i try to open website's main page</title>
+  <step>open link https://www.bugwebsite.example</step>
+  <severity>blocker</severity>
+  <priority>high</priority>
+  <actual_resul>error 404</actual_resul>
+  <expected_result>open main page</expected_result>
+</bug_report>
+
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+click "commit changes"
+
  38. Синхронизировать внешний и локальный репозиторий
+git pull
 
 
 TXT
  1. Создать внешний репозиторий c названием TXT.
+на github.com "create a new repository", add repository name "TXT" and discription "third part of GIT_HW_1" and enter "Create repository"
+
  2. Клонировать репозиторий TXT на локальный компьютер.
+git clone https://github.com/RacooPrArt/TXT.git
+
  3. Внутри локального TXT создать файл “new.txt”.
+touch new.txt
+
  4. Добавить файл под гит.
+git add .
+
  5. Закоммитить файл.
+git commit -m "commit txt file"
+
  6. Отправить файл на внешний GitHub репозиторий.
+git push
  7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+vim new.txt
+i
+ФИО - Пряднев Артем,
+возраст - 27,
+домашние животные - нет,
+зарплатные ожидания - 80 000р,
+город - Москва.
+press "esc"
+:wq
+
  8. Отправить изменения на внешний репозиторий.
+git commit -ma "update txt file"
+git push
+
  9. Создать файл preferences.txt
+touch preferences.txt
+
  10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+vim preferences.txt
+iFilm - La-La-Land,
+Series - Big Bang Theory,
+food - meat,
+season - summer,
+desired country - Czech.
+press "esc"
+:wq
+
  11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+touch skills.txt
+vim skills.txt
+i
+linux tool - GitBash,
+version control tool - Github,
+task tracking system - jira.
+press "esc"
+:wq
+
  12. Сделать коммит в одну строку.
+git add . ; git commit -m "add and commit both txt file"
+
  13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
  14. На веб интерфейсе создать файл bug_report.txt.
  15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
  16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+click "pencil"
+title - error 404 when i try to open WebSite's Main Page,
+steps to reproduce - open link https://www.bugwebsite.example,
+severity - blocker,
+priority - high,
+actual result - error 404,
+expected result - open main page.
+
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+click "commit changes"
+
  18. Синхронизировать внешний и локальный репозиторий
+git fetch
+git pull
